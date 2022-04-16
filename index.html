@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>series-viewer.io</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="module" src="./scripts/main.js"></script>
-    <title>series-viewer.io</title>
 </head>
 <body>
-    <div class="row" id="bar">
-        <div class="col-1"> <img src="http://www.sparetimetv.com/wp-content/uploads/2016/06/tvshows.jpg" height="100" alt="logo" /> </div>
-        <div class="col-11"> <h1>TV Series</h1> </div>
+    <div class="container-fluid">
+        <div class="row row-cols-auto d-flex justify-content-start" id="bar">
+            <div class="col-img"> 
+                <img src="http://www.sparetimetv.com/wp-content/uploads/2016/06/tvshows.jpg" height="100" alt="logo" />
+             </div>
+            <div class="col"> 
+                <h1>TV Series</h1> 
+            </div>
+        </div>
+        <div class = "row justify-content-start">
+            <div class="col-md-4">
+                <table class="table", id="series">
+                    <caption id="series-caption">Series Caption: </caption>
+                    <thead class="thead">
+                        <tr> 
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div> <!-- end of col -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;" id="tv-card">
+                    <img class="card-img-top" alt="Series Image" id="card-img" height="200">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title"></h5>
+                      <p class="card-text" id="card-text"></p>
+                      <a href="#" id="card-link"></a>
+                    </div>
+                  </div>
+            </div> <!-- end of col -->
+        </div>
+
     </div>
-    <table class="table", id="series">
-        <caption id="series-caption">Series Caption: </caption>
-        <thead class="thead">
-            <tr> 
-                <th>#</th>
-                <th>Name</th>
-                <th>Channel</th>
-                <th>Seasons</th>
-            </tr>
-        </thead>
-    </table>
+
 </body>
 </html>
+

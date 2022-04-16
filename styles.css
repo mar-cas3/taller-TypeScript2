@@ -1,16 +1,18 @@
 #bar {
     background-color: rgb(106, 175, 190);
-    display: flex;
     align-items: center;
 }
-
 
 #series {
     display: block;
     float: left;
     align-content: left;
     margin-left: 5%;
-    margin-right: auto;
+    margin-top: 3%;
+}
+
+#tv-card {
+    margin-left: 5%;
     margin-top: 3%;
 }
 
@@ -19,10 +21,11 @@
     border-bottom: solid 2px rgb(206, 206, 206);
     color: #000000;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 1px #fff;
     font-style: bold;
 }
+
 
 #series tbody td {
     background-color: #efeded;
@@ -31,6 +34,16 @@
     color: rgb(0, 0, 0);
     padding: 10px;
     text-align: left;
+}
+
+#series tbody td:nth-child(2){
+    text-decoration: none;
+    color: #007bff;
+}
+
+#series tbody td:nth-child(2):hover{
+    text-decoration: underline;
+    color: #007bff;
 }
 
 #series-caption {
